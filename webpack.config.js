@@ -2,7 +2,7 @@ const { resolve } = require('path');
 const { cwd } = require('process');
 
 module.exports = {
-  entry: 'src/index.ts',
+  entry: './src/index.ts',
   devtool: 'source-map',
   module: {
     rules: [
