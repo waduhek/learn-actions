@@ -16,7 +16,7 @@ function gracefulShutdown() {
     if (error) {
       console.error(`Error while shutting down server: ${error}`);
     } else {
-      console.log('Server shutdown successful');
+      console.log("Server shutdown successful");
     }
   });
 }
