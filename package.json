@@ -2,9 +2,13 @@
   "name": "learn-actions",
   "version": "0.0.0",
   "description": "Learn CI/CD with GitHub Actions",
-  "main": "index.js",
+  "private": "true",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "webpack:compile:dev": "webpack --mode development",
+    "webpack:compile:prod": "webpack --mode production",
+    "webpack:compile:watch": "webpack --mode development --watch",
+    "lint": "npx eslint src/*",
+    "start": "node --enable-source-maps build/index.js"
   },
   "repository": {
     "type": "git",
