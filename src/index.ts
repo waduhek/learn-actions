@@ -1,6 +1,10 @@
 import express from 'express';
 
+import greetRouter from '#/routers/greeting.router';
+
 const app = express();
+
+app.use('/', greetRouter);
 
 const server = app.listen(5000, () => {
   console.log('Express server listening on port 5000');
@@ -17,6 +21,7 @@ function gracefulShutdown() {
       console.error(`Error while shutting down server: ${error}`);
     } else {
       console.log('Server shutdown successful');
+      process.exit();
     }
   });
 }
@@ -24,3 +29,5 @@ function gracefulShutdown() {
 process.on('SIGTERM', gracefulShutdown);
 process.on('SIGINT', gracefulShutdown);
 process.on('SIGHUP', gracefulShutdown);
+
+export default server;

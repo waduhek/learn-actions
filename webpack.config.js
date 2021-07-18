@@ -20,7 +20,7 @@ module.exports = {
     },
   },
   output: {
-    path: resolve(cwd(), 'build'),
+    path: resolve(cwd(), 'dist'),
     filename: 'index.js',
   },
   target: 'node',
