@@ -2,3 +2,7 @@ node_modules
 
 # Build files
 build
+dist
+
+# Webpack config file
+webpack.config.js
